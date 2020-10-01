@@ -19,11 +19,11 @@ spec:
     spec:
       containers:
       - name: uber
-        image: quay.io/kmcdermo/taxi:master
+        image: quay.io/dewan/uber:latest
         imagePullPolicy: Always
         volumeMounts:
         - name: web-files
-          mountPath: /usr/share/booktaxi
+          mountPath: /usr/share/bookuber
         ports:
         - name: http
           containerPort: 8080
@@ -33,4 +33,4 @@ spec:
         configMap:
           name: www-files
       imagePullSecrets:
-        - name: kmcdermo-pull-secret
+        - name: dewan-dewan-bot-pull-secret

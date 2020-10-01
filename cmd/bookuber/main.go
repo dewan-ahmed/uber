@@ -10,7 +10,7 @@ import (
 var CommitSHA string
 
 var (
-	wwwRoot = flag.String("root", "/usr/share/booktaxi", "path to serve files from")
+	wwwRoot = flag.String("root", "/usr/share/bookuber", "path to serve files from")
 	port    = flag.Int("port", 8080, "port to listen on")
 )
 
